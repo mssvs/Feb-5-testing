@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Web Weaver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainarea">
+        <div class="container" id="html-container">
+            <h2>HTML</h2>
+            <textarea id="html" placeholder="Enter HTML code here"></textarea>
+        </div>
+        <div class="container" id="css-container">
+            <h2>CSS</h2>
+            <textarea id="css" placeholder="Enter CSS code here"></textarea>
+        </div>
+        <div class="container" id="js-container">
+            <h2>JavaScript</h2>
+            <textarea id="js" placeholder="Enter JavaScript code here"></textarea>
+        </div>
+    </div>
+    <div class="actions">
+        <div class="save-button">
+            <button id="save-code">Save Code</button>
+        </div>
+		<div class="change-theme-button">
+			<button id="change-theme">Change Theme</button>
+		</div>
+        <div class="file-input">
+            <label for="html-file">Open HTML File</label>
+            <input type="file" id="html-file" accept=".html">
+        </div>
+        <div class="file-input">
+            <label for="css-file">Open CSS File</label>
+            <input type="file" id="css-file" accept=".css">
+        </div>
+        <div class="file-input">
+            <label for="js-file">Open JavaScript File</label>
+            <input type="file" id="js-file" accept=".js">
+        </div>
+    </div>
+    <div class="output">
+        <h2>Output</h2>
+        <iframe id="code"></iframe>
+    </div>
+    <script type="text/JavaScript" src="app.js"></script>
+</body>
+</html>
